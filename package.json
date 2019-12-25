@@ -1,0 +1,33 @@
+{
+  "name": "mint-content",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cleanbuild": "npm run clean && npm run build",
+    "build": "ts-node ./src/builder/build.ts",
+    "clean": "rm -rf ./out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmif-itb/mint-content.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hmif-itb/mint-content/issues"
+  },
+  "homepage": "https://github.com/hmif-itb/mint-content#readme",
+  "dependencies": {
+    "@types/remove-markdown": "^0.1.1",
+    "@types/uuid": "^3.4.6",
+    "@types/yaml": "^1.2.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4",
+    "uuid": "^3.3.3",
+    "yaml": "^1.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.0"
+  }
+}
