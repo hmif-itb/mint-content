@@ -70,7 +70,7 @@ function writeSectionContentFiles(interviewUid: string, section: Section): strin
         prepareDirectory(path.join(outDir, dirPath));
 
         fs.writeFileSync(fullPath, content);
-        contentPaths.push(filePath);
+        contentPaths.push(`/${filePath}`);
     });
 
     return contentPaths;
