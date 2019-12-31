@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "cleanbuild": "npm run clean && npm run build",
-    "build": "ts-node ./src/builder/build.ts",
+    "build": "npm run build-interviews && npm run build-nim",
+    "build-interviews": "ts-node ./src/content-builder/build.ts",
+    "build-nim": "ts-node ./src/nim-builder/build.ts",
     "clean": "rm -rf ./out"
   },
   "repository": {

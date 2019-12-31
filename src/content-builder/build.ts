@@ -4,7 +4,7 @@ import path from 'path';
 import { InterviewType, readInterviewTypes } from "./interview";
 import { Section, readSections } from "./section";
 
-const outDir = "out";
+const outDir = "out/interview";
 
 interface Interview {
     id: string;
