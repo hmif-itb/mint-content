@@ -4,6 +4,7 @@ import yaml from 'yaml';
 
 export interface InterviewType {
     folderName: string;
+    folderPath: string;
     interviewTitle: string;
     authors: string[];
 }
@@ -28,7 +29,8 @@ export function readInterviewTypes(contentDirectory: string): InterviewType[] {
                     const manifest = readManifest(manifestPath);
 
                     return {
-                        folderName: folderPath,
+                        folderName: folder,
+                        folderPath,
                         interviewTitle: manifest.title,
                         authors: manifest.authors
                     } as InterviewType;

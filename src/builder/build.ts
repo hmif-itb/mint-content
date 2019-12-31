@@ -1,4 +1,3 @@
-import uuidv4 from 'uuid/v4';
 import * as fs from 'fs-extra';
 import path from 'path';
 import { InterviewType, readInterviewTypes } from "./interview";
@@ -33,8 +32,8 @@ function build() {
 
     let interviews: Interview[] = [];
     interviewTypes.forEach((interviewType: InterviewType) => {
-        const interviewUid = uuidv4();
-        const sections = readSections(interviewType.folderName);
+        const interviewUid = interviewType.folderName;
+        const sections = readSections(interviewType.folderPath);
 
         let sectionsOut = sections.map((section: Section) => {
             console.log (` [*] Writing section '${section.title}' file...`);
@@ -65,7 +64,7 @@ function prepareDirectory(dir: string) {
 
 function writeSectionContentFiles(interviewUid: string, section: Section): string[] {
     let contentPaths: string[] = [];
-    const sectionUid = uuidv4();
+    const sectionUid = section.order.toString();
 
     section.content.forEach((content, i) => {
         const dirPath = path.join("markdowns", interviewUid, sectionUid);
