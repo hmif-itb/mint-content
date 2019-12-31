@@ -1,10 +1,12 @@
 import uuidv4 from 'uuid/v4';
-import * as fs from 'fs';
+import * as fs from 'fs-extra';
 import path from 'path';
 import { InterviewType, readInterviewTypes } from "./interview";
 import { Section, readSections } from "./section";
 
-const outDir = "out/interview";
+const outDir = "out";
+const contentDir = "src/content";
+const staticDir = "static";
 
 interface Interview {
     id: string;
@@ -19,10 +21,13 @@ interface SectionOut {
 }
 
 function build() {
-    const interviewTypes = readInterviewTypes("src/content");
+    const interviewTypes = readInterviewTypes(contentDir);
 
     console.log(" [*] Preparing out directory...");
     prepareDirectory(outDir);
+
+    console.log(" [*] Copying static files...");
+    fs.copySync(staticDir, outDir);
 
     console.log (" [*] Compiling markdowns...");
 

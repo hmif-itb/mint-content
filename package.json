@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cleanbuild": "npm run clean && npm run build",
-    "build": "npm run build-interviews && npm run build-nim",
-    "build-interviews": "ts-node ./src/content-builder/build.ts",
-    "build-nim": "ts-node ./src/nim-builder/build.ts",
+    "build": "ts-node ./src/builder/build.ts",
     "clean": "rm -rf ./out"
   },
   "repository": {
@@ -21,9 +19,11 @@
   },
   "homepage": "https://github.com/hmif-itb/mint-content#readme",
   "dependencies": {
+    "@types/fs-extra": "^8.0.1",
     "@types/remove-markdown": "^0.1.1",
     "@types/uuid": "^3.4.6",
     "@types/yaml": "^1.2.0",
+    "fs-extra": "^8.1.0",
     "ts-node": "^8.5.4",
     "typescript": "^3.7.4",
     "uuid": "^3.3.3",
