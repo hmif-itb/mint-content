@@ -60,15 +60,10 @@ function parseSectionDirectory(dirPath: string): Section|void {
     const files = fs.readdirSync(dirPath);
     const content = files
         .map((filePath: string) => {
-            if (filePath.startsWith("_blank")) {
-                return "_blank";
-            }
-
             const fullPath = path.join(dirPath, filePath);
             const raw = Buffer.from(fs.readFileSync(fullPath)).toString().trimLeft();
-            if (!!raw) return raw;
-        })
-        .filter(element => !!element);
+            return raw || '';
+        });
 
     return {
         order,
