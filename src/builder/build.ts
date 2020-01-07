@@ -11,6 +11,7 @@ interface Interview {
     id: string;
     title: string;
     sections: SectionOut[];
+    authors: string[];
 }
 
 interface SectionOut {
@@ -48,7 +49,8 @@ function build() {
         interviews.push({
             id: interviewUid,
             title: interviewType.interviewTitle,
-            sections: sectionsOut
+            sections: sectionsOut,
+            authors: interviewType.authors
         });
     });
 
