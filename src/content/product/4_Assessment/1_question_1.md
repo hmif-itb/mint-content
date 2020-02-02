@@ -2,8 +2,7 @@
 
 Tanyakan pertanyaan berikut:
 
-> Suatu kapal pengangkut (shipping container) melaut dari China ke Indonesia pada bulan Desember. 
-> Apabila kapal tersebut dalam kapasitas maksimal, berapa valuasi barang yang diangkutnya?
+> Apa fitur dari Google yang unik menurutmu dan apakah kamu punya ide untuk mengembangkannya?
 
 Untuk pertanyaan ini, tidak ada jawaban salah ataupun benar.
 Tanyakan alasan teman kamu memilih jawaban itu, gali terus sampai kamu merasa alasannya cukup kuat.
@@ -11,4 +10,4 @@ Tanyakan alasan teman kamu memilih jawaban itu, gali terus sampai kamu merasa al
 **Jangan berikan pendapat kamu untuk menjawab pertanyaan ini**.
 
 
-Untuk bagian ini, maksimal kira-kita 10 menit saja.
+Untuk bagian ini, maksimal kira-kira 10 menit saja.

@@ -1,10 +1,10 @@
-> Untuk coding test kali ini, coba kamu buka link google docs, kemudian tulis kode dalam bahasa yang kamu pahami.
+Untuk coding interview, silakan kamu membuat link Google Docs, [Codeshare.io](https://codeshare.io), atau realtime editor lainnya, kemudian berikan URLnya ke kandidat.
 
 #### Palindrome Checker
 
 >Diberikan sebuah **string** berukuran bebas, dan buatlah program untuk mengeluarkan semua palindrom yang ada pada string tersebut.
 
----
+Tanyakan kepada kandidat cara kerja algoritmanya, dan apakah algoritma tersebut dapat dibuat lebih cepat.
 
 Perlu diperhatikan bagaimana interviewee mengutarakan isi pikirannya.
 Solusi yang ditemukan tidak perlu sempurna pertama kali, brute force juga boleh.
